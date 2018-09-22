@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <center>
+      <%if (user == null){%>
+        <h2>Este usuario no existe!!!</h2>
+      <%}else{%>
+
+        <p>
+        <h1> Nombre: <%= user.name %> </h1>
+        <h1> Universidad: <%= user.university %> </h1>
+        <%if (user.verified){%>
+          ESTE USUARIO ESTÁ VERFICADO!
+        <%}%>
+        <h1> email: <%= user.email %> </h1>
+        <img src=<%=user.picture_link%>>
+
+        </p>
+        <br>
+        <br>
+
+      <%}%>
+
+    </center>
+  </div>
+</body>
+
+</html>
